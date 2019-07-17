@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+=======
+  root 'users/new'
+>>>>>>> parent of a29761d... root changed 2nd
 
   root 'users#new'
   get "log_out" => "sessions#destroy", :as => "log_out"
