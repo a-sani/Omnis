@@ -1,8 +1,11 @@
 <% content_for(:sidebar) do %>
 	<%= render :partial => "layouts/sidebar" %>
 <% end %>
-<h1>Courses</h1>
-<p>Here are you courses! </p>
 
-<p> Create button to add a new course </p>
-<%= link_to "Add Course", add_path, class: "btn btn-lg btn-primary" %>
+ <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	<h1>Courses</h1>
+	<p>Here are you courses! </p>
+
+	<p> Create button to add a new course </p>
+	<%= link_to "Add Course", add_path, class: "btn btn-lg btn-primary" %>
+</div>
