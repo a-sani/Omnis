@@ -1,5 +1,12 @@
-<% content_for(:sidebar) do %>
-	<%= render :partial => "layouts/sidebar" %>
-<% end %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+		<% content_for(:sidebar) do %>
+			<%= render :partial => "layouts/sidebar" %>
+		<% end %>
+    </section>
+  </aside>
+</div>
+
 
 <%= @user.name %>, <%= @user.email %>
