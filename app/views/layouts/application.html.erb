@@ -15,7 +15,11 @@
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
       <div class="row">
-          <%= yield :sidebar %>
+        <aside class="col-md-4">
+          <section class="side">
+            <%= yield :sidebar %>
+          </section>
+        </aside>
       </div> 
       <%= yield %>
     </div>
