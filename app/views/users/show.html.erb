@@ -1,3 +1,5 @@
-
+<% content_for(:sidebar) do %>
+	<%= render :partial => "layouts/sidebar" %>
+<% end %>
 
 <%= @user.name %>, <%= @user.email %>
