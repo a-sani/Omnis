@@ -10,8 +10,9 @@ Rails.application.routes.draw do
 	get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
-  get  '/mycourses',  to: 'courses#existing'
-  get    '/add',   to: 'courses#new'
+   get  '/courses',  to: 'courses#existing' #list of courses
+  get  '/courses/:id',  to: 'courses#show' #show specific course
+  get    '/courses/add',   to: 'courses#new' #add a course
 	resources :users
   resources :courses
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
