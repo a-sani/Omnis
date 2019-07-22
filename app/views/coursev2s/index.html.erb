@@ -12,11 +12,12 @@
           <tr>  
             <pre>
               <button class= "btn btn-outline-primary">
-            <td><%= link_to coursev2.name, coursev2 %></td>  
+            <td><%= link_to coursev2.name, coursev2, class: "btn btn-outline-primary" %></td>  
           </button>
-            </pre>   
+            
             <td><%= link_to 'Edit', edit_coursev2_path(coursev2) %></td>    
             <td><%= link_to 'Delete', coursev2, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </pre>   
 
           </tr>
         <% end %>
