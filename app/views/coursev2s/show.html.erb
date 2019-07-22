@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @coursev2.name %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @coursev2.website %>
+</p>
+
+<p>
+  <strong>Duedate:</strong>
+  <%= @coursev2.duedate %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @coursev2.notes %>
+</p>
+
+<%= link_to 'Edit', edit_coursev2_path(@coursev2) %> |
+<%= link_to 'Back', coursev2s_path %>
