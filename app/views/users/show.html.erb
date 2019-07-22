@@ -2,15 +2,15 @@
 	<%= render :partial => "layouts/sidebar" %>
 <% end %>
  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
- 	<h1> Welcome
-	<%= @user.name %>
-	</h1>
 
-	<p> This is your Omnis Homepage </p>
-
-<a class="weatherwidget-io" href="https://forecast7.com/en/49d28n123d12/vancouver/" data-label_1="VANCOUVER" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-days="5" data-theme="weather_one" >VANCOUVER WEATHER</a>
+ 	<a class="weatherwidget-io" href="https://forecast7.com/en/49d28n123d12/vancouver/" data-label_1="VANCOUVER" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-days="5" data-theme="weather_one" >VANCOUVER WEATHER</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
+
+
+ 	<h1> Welcome
+	<%= @user.name %> .
+	</h1>
 
 </div>
