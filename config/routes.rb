@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   get  '/mycourses',  to: 'courses#existing'
-  get    '/add',   to: 'courses#new'
+  get    '/add',   to: 'coursev2#new'
 	resources :users
   resources :courses
   resources :password_resets,     only: [:new, :create, :edit, :update]
