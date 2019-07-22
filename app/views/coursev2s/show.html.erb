@@ -13,7 +13,9 @@
 
 	<p>
 	  <strong>Website:</strong>
-	  <%= @coursev2.website %>
+	  <% @coursev2.website do |coursev2| %>
+	  <%= link_to "your label", @coursev2.website, :target => "_blank" %>
+
 	</p>
 
 	<p>
