@@ -1,33 +1,33 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Coursev2s</h1>
+<% content_for(:sidebar) do %>
+  <%= render :partial => "layouts/sidebar" %>
+<% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Website</th>
-      <th>Duedate</th>
-      <th>Notes</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+ <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1>Courses</h1>
 
-  <tbody>
-    <% @coursev2s.each do |coursev2| %>
-      <tr>
-        <td><%= coursev2.name %></td>
-        <td><%= coursev2.website %></td>
-        <td><%= coursev2.duedate %></td>
-        <td><%= coursev2.notes %></td>
-        <td><%= link_to 'Show', coursev2 %></td>
-        <td><%= link_to 'Edit', edit_coursev2_path(coursev2) %></td>
-        <td><%= link_to 'Destroy', coursev2, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<br>
+      <tbody>
+        <% @coursev2s.each do |coursev2| %>
+          <tr>
+            <td><%= coursev2.name %></td>
+            <td><%= link_to 'Show', coursev2 %></td>
+            <td><%= link_to 'Edit', edit_coursev2_path(coursev2) %></td>
+            <td><%= link_to 'Delete', coursev2, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-<%= link_to 'New Coursev2', new_coursev2_path %>
+    <br>
+
+    <%= link_to 'Add Course?', new_coursev2_path %>
+</div>

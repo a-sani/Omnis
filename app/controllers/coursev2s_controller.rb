@@ -28,7 +28,7 @@ class Coursev2sController < ApplicationController
 
     respond_to do |format|
       if @coursev2.save
-        format.html { redirect_to @coursev2, notice: 'Coursev2 was successfully created.' }
+        format.html { redirect_to @coursev2, notice: 'Course was successfully created.' }
         format.json { render :show, status: :created, location: @coursev2 }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class Coursev2sController < ApplicationController
   def update
     respond_to do |format|
       if @coursev2.update(coursev2_params)
-        format.html { redirect_to @coursev2, notice: 'Coursev2 was successfully updated.' }
+        format.html { redirect_to @coursev2, notice: 'Course was successfully updated.' }
         format.json { render :show, status: :ok, location: @coursev2 }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class Coursev2sController < ApplicationController
   def destroy
     @coursev2.destroy
     respond_to do |format|
-      format.html { redirect_to coursev2s_url, notice: 'Coursev2 was successfully destroyed.' }
+      format.html { redirect_to coursev2s_url, notice: 'Course was successfully deleted.' }
       format.json { head :no_content }
     end
   end
