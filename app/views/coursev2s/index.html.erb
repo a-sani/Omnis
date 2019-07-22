@@ -9,13 +9,13 @@
 
       <tbody>
         <% @coursev2s.each do |coursev2| %>
-        <b><%= link_to coursev2.name, coursev2, class: "btn btn-outline-primary" %></b>
           <tr>  
+            <pre>
             <td><b><%= link_to coursev2.name, coursev2, class: "btn btn-outline-primary" %></b></td>  
-            <pre>   
+            </pre>   
             <td><%= link_to 'Edit', edit_coursev2_path(coursev2) %></td>    
             <td><%= link_to 'Delete', coursev2, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          </pre>
+
           </tr>
         <% end %>
       </tbody>
