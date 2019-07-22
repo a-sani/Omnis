@@ -1,7 +1,7 @@
 <%= form_with(model: coursev2, local: true) do |form| %>
   <% if coursev2.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(coursev2.errors.count, "error") %> prohibited this coursev2 from being saved:</h2>
+      <h2><%= pluralize(coursev2.errors.count, "error") %> prohibited this course from being saved:</h2>
 
       <ul>
       <% coursev2.errors.full_messages.each do |message| %>
@@ -32,6 +32,7 @@
   </div>
 
   <div class="actions">
+    <%= form.label :Submit %>
     <%= form.submit %>
   </div>
 <% end %>
