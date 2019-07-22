@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
+
   get 'courses/new'
 
   get 'sessions/new'
@@ -15,5 +19,6 @@ Rails.application.routes.draw do
   get    '/add',   to: 'courses#new'
 	resources :users
   resources :courses
+  resources :password_resets,     only: [:new, :create, :edit, :update]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
