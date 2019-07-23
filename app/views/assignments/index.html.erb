@@ -3,6 +3,11 @@
 <h1>Assignments</h1>
 <%= month_calendar events: @assignments do |date, assignments| %>
   <%= date.day %>
+  <% assignments.each do |meeting| %>
+    <div>
+      <%= meeting.name %>
+    </div>
+  <% end %>
 <% end %>
 
 <table>
