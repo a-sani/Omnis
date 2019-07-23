@@ -8,10 +8,10 @@
     <h1>Courses</h1>
 
       <tbody>
-        <% @coursev2s.each do |coursev2| %>
+        <% @subjects.each do |subject| %>
           <tr>  
               <button class= "btn btn-success">
-            <td><%= link_to coursev2.name, subject, class: "btn btn-success" %></td>  
+            <td><%= link_to subject.name, subject, class: "btn btn-success" %></td>  
           </button>
             <pre>
             <td><%= link_to 'Edit', edit_subject_path(subject) %></td>    
