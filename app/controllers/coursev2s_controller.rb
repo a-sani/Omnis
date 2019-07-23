@@ -69,6 +69,6 @@ class Coursev2sController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def coursev2_params
-      params.require(:coursev2).permit(:name, :website, :duedate, :notes)
+      params.require(:coursev2).permit(:name, :website1, :website2, :website3, :duedate, :notes)
     end
 end
