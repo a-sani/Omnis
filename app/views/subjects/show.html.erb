@@ -21,7 +21,7 @@
 
 
   <p>
-    <% if @subject.website2 %>
+    <% unless @subject.website2.blank? %>
       <strong>Website 2:</strong>
       <br>
       <%= link_to @subject.website2, :target => "_blank" %>
