@@ -1,15 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Assignments</h1>
-<%= month_calendar events: @assignments do |date, assignments| %>
-  <%= date %>
-
-  <% assignments.each do |assignment| %>
-    <div>
-      <%= assignments.name %>
-    </div>
-  <% end %>
+<%= month_calendar do |date| %>
+<%= date.day %>
 <% end %>
+
 <table>
   <thead>
     <tr>
