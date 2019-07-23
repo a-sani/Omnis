@@ -4,12 +4,9 @@
   <%= render :partial => "layouts/sidebar" %>
 <% end %>
 
- <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">   
-    <%= link_to "Add Course?", new_subject_path, class: "btn btn-lg btn-primary" %>
-
     <h1>Courses</h1>
 
-      <tbody>
+
         <% @subjects.each do |subject| %>
           <tr>  
               <button class= "btn btn-success">
@@ -21,15 +18,17 @@
             <td><%= link_to 'Delete', subject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
                                                            </pre>
 <!--             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-
-
-
           </tr>
         <% end %>
-      </tbody>
+
     </table>
 
     <br>
+    <br>
+    <br>
+     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">   
+    <%= link_to "Add Course?", new_subject_path, class: "btn btn-lg btn-primary" %>
+
 
 
 </div>
