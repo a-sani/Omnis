@@ -30,10 +30,9 @@
   </div>
 
 
-
   <div class="field">
     <%= form.label :duedate %>
-    <%= form.date_select :duedate, id: :coursev2_duedate %>
+    <%= f.date_field :duedate, id: :coursev2_duedate, value: f.object.try(:strftime,"%m/%d/%Y"), class: 'form-control' %>
   </div>
 
   <div class="field">
