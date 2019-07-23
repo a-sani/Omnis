@@ -12,7 +12,7 @@
   </p>
 
   <p>
-    <% if @subject.website1 %>
+    <% unless @subject.website1.blank? %>
       <strong>Website 1:</strong>
       <br>
       <%= link_to @subject.website1, :target => "_blank" %>
@@ -29,7 +29,7 @@
   </p>
 
   <p>
-    <% if @subject.website3 %>
+    <% unless @subject.website3.blank? %>
       <strong>Website 3:</strong>
       <br>
       <%= link_to @subject.website3, :target => "_blank" %>
