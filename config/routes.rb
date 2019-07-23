@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :coursev2s
+  #resources :coursev2s
   get 'courses/new'
 
   get 'sessions/new'
@@ -13,9 +13,10 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   get  '/mycourses',  to: 'courses#existing'
-  get    '/add',   to: 'coursev2s#new'
+  get    '/add',   to: 'subjects#new'
 	resources :users
-  resources :courses
+  #resources :courses
+  resources :subjects
   resources :password_resets,     only: [:new, :create, :edit, :update]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

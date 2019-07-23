@@ -1,0 +1,36 @@
+
+<% content_for(:sidebar) do %>
+  <%= render :partial => "layouts/sidebar" %>
+<% end %>
+
+ <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @subject.name %>
+  </p>
+
+  <p>
+    <strong>Website1:</strong>
+    <%= @subject.website1 %>
+  </p>
+
+  <p>
+    <strong>Website2:</strong>
+    <%= @subject.website2 %>
+  </p>
+
+  <p>
+    <strong>Website3:</strong>
+    <%= @subject.website3 %>
+  </p>
+
+  <p>
+    <strong>Notes:</strong>
+    <%= @subject.notes %>
+  </p>
+
+  <%= link_to 'Edit', edit_subject_path(@subject) %> |
+  <%= link_to 'Back', subjects_path %>
+</div>
