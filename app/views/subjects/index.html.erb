@@ -11,11 +11,11 @@
         <% @coursev2s.each do |coursev2| %>
           <tr>  
               <button class= "btn btn-success">
-            <td><%= link_to coursev2.name, coursev2, class: "btn btn-success" %></td>  
+            <td><%= link_to coursev2.name, subject, class: "btn btn-success" %></td>  
           </button>
             <pre>
-            <td><%= link_to 'Edit', edit_coursev2_path(coursev2) %></td>    
-            <td><%= link_to 'Delete', coursev2, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Edit', edit_subject_path(subject) %></td>    
+            <td><%= link_to 'Delete', subject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </pre>   
 
           </tr>
@@ -24,8 +24,7 @@
     </table>
 
     <br>
-    <%= link_to "Add Course?", subjects_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Add Course?", new_subject_path, class: "btn btn-lg btn-primary" %>
 
 </div>
-
 
