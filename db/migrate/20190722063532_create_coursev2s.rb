@@ -2,9 +2,7 @@ class CreateCoursev2s < ActiveRecord::Migration[5.1]
   def change
     create_table :coursev2s do |t|
       t.string :name
-      t.string :website1
-      t.string :website2
-      t.string :website3
+      t.string :website
       t.date :duedate
       t.text :notes
 
