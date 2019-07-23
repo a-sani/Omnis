@@ -24,7 +24,15 @@
     <% end %>
   </tbody>
 </table>
+<%= month_calendar events: @assignments do |date, assignments| %>
+  <%= date %>
 
+  <% assignments.each do |assignment| %>
+    <div>
+      <%= assignments.name %>
+    </div>
+  <% end %>
+<% end %>
 <br>
 
 <%= link_to 'New Assignment', new_assignment_path %>
