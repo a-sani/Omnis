@@ -21,6 +21,8 @@
     <%= form.text_area :website, id: :coursev2_website %>
   </div>
   <%= link_to 'Add Website?', new_website_path, class: "btn btn-lg btn-secondary"  %>
+  <%= render 'form', website: @website %>
+
 
 
   <div class="field">
