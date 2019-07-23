@@ -14,9 +14,11 @@
             <td><%= link_to subject.name, subject, class: "btn btn-success" %></td>  
           </button>
             <pre>
+              <div class="center">
             <td><%= link_to 'Edit', edit_subject_path(subject) %></td>    
             <td><%= link_to 'Delete', subject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </pre>   
+             </div>
 
           </tr>
         <% end %>
