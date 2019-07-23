@@ -1,10 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Assignments</h1>
-<%= month_calendar do |date| %>
+<%= month_calendar events: @assignments do |date, assignments| %>
   <%= date.day %>
-  <% assignments.each do |a| %>
-  <% end %>
 <% end %>
 
 <table>
