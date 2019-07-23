@@ -5,7 +5,9 @@
 <% end %>
 
  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-    <h1>Courses</h1>
+    <h1>    
+    <%= link_to "Add Course?", new_subject_path, class: "btn btn-lg btn-primary" %>
+    Courses</h1>
 
       <tbody>
         <% @subjects.each do |subject| %>
@@ -13,7 +15,7 @@
               <button class= "btn btn-success">
             <td><%= link_to subject.name, subject, class: "btn btn-success" %></td>  
           </button>
-            <td><%= link_to 'Edit', edit_subject_path(subject) %></td> 
+            <td><%= link_to '  Edit', edit_subject_path(subject) %></td> 
             &nbsp;   
             <td><%= link_to 'Delete', subject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -25,7 +27,7 @@
     </table>
 
     <br>
-    <%= link_to "Add Course?", new_subject_path, class: "btn btn-lg btn-primary" %>
+
 
 </div>
 
