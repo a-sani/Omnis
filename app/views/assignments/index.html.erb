@@ -4,11 +4,6 @@
 <%= month_calendar do |date| %>
   <%= date.day %>
   <% if @assignments_by_date[date] %>
-  <ul>
-    <%= @assignments_by_date[date].each do |a| %>
-      <li><%= link_to a.name, a %></li>
-      <% end %>
-  </ul>
   <% end %>
 <% end %>
 
