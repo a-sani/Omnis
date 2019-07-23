@@ -5,11 +5,9 @@
 <% end %>
   <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
     <h1>Courses</h1>
-    <table>
       <tbody>
         <% @subjects.each do |subject| %>
           <tr>  
-              
             <td><%= button_to subject.name, subject, class: "btn btn-success" %></td>  
           
             &nbsp;
@@ -22,7 +20,6 @@
           </tr>
         <% end %>
       </tbody>
-    </table>
 
     <br>
     <br>
