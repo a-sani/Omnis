@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  #resources :coursev2s
+  resources :coursev2s
   get 'courses/new'
 
   get 'sessions/new'
