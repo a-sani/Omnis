@@ -12,20 +12,28 @@
   </p>
 
   <p>
-    <strong>Website1:</strong>
-    <br>
-    <%= link_to @subject.website1, :target => "_blank" %>
-    <%= @subject.website1 %>
+    <% if @subject.website1 %>
+      <strong>Website 1:</strong>
+      <br>
+      <%= link_to @subject.website1, :target => "_blank" %>
+    <% end %>
+  </p>
+
+
+  <p>
+    <% if @subject.website2 %>
+      <strong>Website 2:</strong>
+      <br>
+      <%= link_to @subject.website2, :target => "_blank" %>
+    <% end %>
   </p>
 
   <p>
-    <strong>Website2:</strong>
-    <%= @subject.website2 %>
-  </p>
-
-  <p>
-    <strong>Website3:</strong>
-    <%= @subject.website3 %>
+    <% if @subject.website3 %>
+      <strong>Website 3:</strong>
+      <br>
+      <%= link_to @subject.website3, :target => "_blank" %>
+    <% end %>
   </p>
 
   <p>
