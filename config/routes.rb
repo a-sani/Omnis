@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :assignments
   resources :coursev2s
   get 'courses/new'
 
