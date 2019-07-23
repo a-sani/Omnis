@@ -15,7 +15,6 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
   get  '/mycourses',  to: 'courses#existing'
   get    '/add',   to: 'coursev2s#new'
-  get '/assignments', to: 'assignments#assignments'
 	resources :users
   resources :courses
   resources :password_resets,     only: [:new, :create, :edit, :update]
