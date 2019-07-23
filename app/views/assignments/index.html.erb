@@ -3,7 +3,7 @@
 <h1>Assignments</h1>
 <%= month_calendar do |date| %>
   <%= date.day %>
-  <% if @assignments_by_date[date] %>
+  <% assignments.each do |a| %>
   <% end %>
 <% end %>
 
