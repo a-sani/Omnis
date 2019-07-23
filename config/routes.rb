@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   resources :assignments
   resources :coursev2s
   get 'courses/new'
-
+  get 'demo/taskboard'
+  get 'demo/progress'
   get 'sessions/new'
 
   root 'static_pages#home'
