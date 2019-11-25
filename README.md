@@ -1,6 +1,6 @@
 # README
 
-README will document steps necessary to get the application running.
+Documenting steps necessary to get the application running.
 
 *Concepts to cover:*
 
